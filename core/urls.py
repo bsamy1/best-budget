@@ -1,8 +1,8 @@
 """
-URL configuration for budget_project project.
+URL configuration for core project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.2/topics/http/urls/
+    https://docs.djangoproject.com/en/6.0/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,10 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from budgets import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.transactions_list, name='home'),  # 👈 also add this if you want homepage
-    path('add/', views.add_transaction, name='add_transaction'),
 ]
