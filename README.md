@@ -1,2 +1,2 @@
-# budget-tracker
+# Best Budget
 Personal Budget Tracker
